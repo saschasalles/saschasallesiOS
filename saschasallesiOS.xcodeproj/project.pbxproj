@@ -13,6 +13,9 @@
 		2BBB42C325F52552000513E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBB42C225F52552000513E7 /* Assets.xcassets */; };
 		2BBB42C625F52552000513E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBB42C525F52552000513E7 /* Preview Assets.xcassets */; };
 		2BBB42C925F52552000513E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBB42C725F52552000513E7 /* LaunchScreen.storyboard */; };
+		2BBB42D525F528CA000513E7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42D425F528CA000513E7 /* AboutView.swift */; };
+		2BBB42DB25F55F7C000513E7 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42DA25F55F7C000513E7 /* CustomButtonStyle.swift */; };
+		2BBB42DE25F5790F000513E7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42DD25F5790F000513E7 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2BBB42C525F52552000513E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BBB42C825F52552000513E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BBB42CA25F52552000513E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BBB42D425F528CA000513E7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		2BBB42DA25F55F7C000513E7 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		2BBB42DD25F5790F000513E7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,9 @@
 			children = (
 				2BBB42BC25F52550000513E7 /* AppDelegate.swift */,
 				2BBB42BE25F52550000513E7 /* SceneDelegate.swift */,
-				2BBB42C025F52550000513E7 /* ContentView.swift */,
+				2BBB42D325F528AE000513E7 /* Models */,
+				2BBB42D225F528A4000513E7 /* ViewModels */,
+				2BBB42D125F5289B000513E7 /* Views */,
 				2BBB42C225F52552000513E7 /* Assets.xcassets */,
 				2BBB42C725F52552000513E7 /* LaunchScreen.storyboard */,
 				2BBB42CA25F52552000513E7 /* Info.plist */,
@@ -73,6 +81,39 @@
 				2BBB42C525F52552000513E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BBB42D125F5289B000513E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BBB42D925F55F65000513E7 /* Extensions */,
+				2BBB42C025F52550000513E7 /* ContentView.swift */,
+				2BBB42D425F528CA000513E7 /* AboutView.swift */,
+				2BBB42DD25F5790F000513E7 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BBB42D225F528A4000513E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2BBB42D325F528AE000513E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BBB42D925F55F65000513E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BBB42DA25F55F7C000513E7 /* CustomButtonStyle.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBB42D525F528CA000513E7 /* AboutView.swift in Sources */,
+				2BBB42DE25F5790F000513E7 /* MapView.swift in Sources */,
 				2BBB42BD25F52550000513E7 /* AppDelegate.swift in Sources */,
+				2BBB42DB25F55F7C000513E7 /* CustomButtonStyle.swift in Sources */,
 				2BBB42BF25F52550000513E7 /* SceneDelegate.swift in Sources */,
 				2BBB42C125F52550000513E7 /* ContentView.swift in Sources */,
 			);
