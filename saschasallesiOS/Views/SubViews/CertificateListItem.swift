@@ -29,7 +29,7 @@ struct CertificateListItem: View {
                 Text("OpenClassRoom Certification")
                     .font(Font.system(.body, design: .rounded))
                     .bold()
-                    .foregroundColor(Color(.systemIndigo))
+                    .foregroundColor(Color(.systemOrange))
                 Text("Apprenez à ajouter des listes dans vos apps")
                     .font(Font.system(.callout, design: .rounded))
                     .foregroundColor(Color(.systemGray))

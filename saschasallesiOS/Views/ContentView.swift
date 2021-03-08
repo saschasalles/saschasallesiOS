@@ -15,7 +15,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("About me", systemImage: "person.fill")
                 }.tag(1)
-            Text("Tab Content 2")
+            NewsView()
                 .tabItem {
                     Label("News", systemImage: "newspaper.fill")
                 }.tag(2)

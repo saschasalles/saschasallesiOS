@@ -20,7 +20,7 @@ struct StudiesCardView: View {
     var body: some View {
 
         Color(.tertiarySystemBackground)
-            .frame(width: abs(self.size), height: 300)
+            .frame(width: abs(self.size), height: 340)
 
             .overlay(
             VStack(alignment: .leading) {
@@ -37,7 +37,8 @@ struct StudiesCardView: View {
                             .shadow(color: Color.black, radius: 3)
                             .padding(30)
                         Spacer()
-                    }.frame(maxWidth: .infinity, alignment: .trailing)
+                    }.frame(width: abs(self.size), alignment: .trailing)
+
                 )
                 Spacer()
                 VStack(alignment: .leading) {
@@ -49,16 +50,14 @@ struct StudiesCardView: View {
                     Text(self.degree)
                         .font(.headline)
                     Text(self.description)
-                        .font(.callout)
+                        .font(Font.system(.callout, design: .rounded))
                         .padding(.bottom)
-                    Spacer()
-                }.padding(.horizontal)
+                }.padding(.horizontal, 40)
             }
         )
             .cornerRadius(20)
-            .shadow(radius: 4)
-            .padding(.horizontal)
-            .padding(.vertical, 10)
+            .shadow(radius: 15)
+
     }
 }
 

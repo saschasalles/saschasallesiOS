@@ -129,13 +129,15 @@ struct AboutView: View {
                             .bold()
                             .padding(.top, 20)
                             .padding(.horizontal, 10)
+                            .padding(.bottom, -15)
 
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 10) {
+                            HStack(spacing: 25) {
 
-                                StudiesCardView(size: geo.size.width - 30, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
-                                StudiesCardView(size: geo.size.width - 30, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
-                            }
+                                StudiesCardView(size: geo.size.width - 55, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
+                                StudiesCardView(size: geo.size.width - 55, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
+                            }.padding(.horizontal, 20)
+                            .padding(.vertical, 40)
                         }
 
                     }
@@ -158,7 +160,8 @@ struct AboutView: View {
                             CertificateListItem()
                             CertificateListItem()
                         }
-                    }.padding(10)
+                    }.padding(.horizontal, 10)
+                    .padding(.top, -20)
 
                 }
             }
