@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2D177825F624B9005CD071 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D177725F624B9005CD071 /* GradientView.swift */; };
+		2B2D177C25F62741005CD071 /* CardMidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D177B25F62741005CD071 /* CardMidView.swift */; };
+		2B2D177F25F6290C005CD071 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D177E25F6290C005CD071 /* MailView.swift */; };
+		2B2D178225F62B4A005CD071 /* Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D178125F62B4A005CD071 /* Parallax.swift */; };
+		2B2D178625F655F6005CD071 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D178525F655F6005CD071 /* ContactView.swift */; };
 		2BBB42BD25F52550000513E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42BC25F52550000513E7 /* AppDelegate.swift */; };
 		2BBB42BF25F52550000513E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42BE25F52550000513E7 /* SceneDelegate.swift */; };
 		2BBB42C125F52550000513E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42C025F52550000513E7 /* ContentView.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2D177725F624B9005CD071 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2B2D177B25F62741005CD071 /* CardMidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMidView.swift; sourceTree = "<group>"; };
+		2B2D177E25F6290C005CD071 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MailView.swift; path = saschasallesiOS/Views/SubViews/MailView.swift; sourceTree = SOURCE_ROOT; };
+		2B2D178125F62B4A005CD071 /* Parallax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parallax.swift; sourceTree = "<group>"; };
+		2B2D178525F655F6005CD071 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		2BBB42B925F52550000513E7 /* saschasallesiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saschasallesiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBB42BC25F52550000513E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BBB42BE25F52550000513E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2D177625F6249B005CD071 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				2B2D177725F624B9005CD071 /* GradientView.swift */,
+				2B2D177B25F62741005CD071 /* CardMidView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		2BBB42B025F52550000513E7 = {
 			isa = PBXGroup;
 			children = (
@@ -86,10 +105,11 @@
 		2BBB42D125F5289B000513E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B2D177625F6249B005CD071 /* SubViews */,
 				2BBB42D925F55F65000513E7 /* Extensions */,
 				2BBB42C025F52550000513E7 /* ContentView.swift */,
 				2BBB42D425F528CA000513E7 /* AboutView.swift */,
-				2BBB42DD25F5790F000513E7 /* MapView.swift */,
+				2B2D178525F655F6005CD071 /* ContactView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,7 +131,10 @@
 		2BBB42D925F55F65000513E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2B2D178125F62B4A005CD071 /* Parallax.swift */,
 				2BBB42DA25F55F7C000513E7 /* CustomButtonStyle.swift */,
+				2BBB42DD25F5790F000513E7 /* MapView.swift */,
+				2B2D177E25F6290C005CD071 /* MailView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,10 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BBB42D525F528CA000513E7 /* AboutView.swift in Sources */,
+				2B2D178625F655F6005CD071 /* ContactView.swift in Sources */,
 				2BBB42DE25F5790F000513E7 /* MapView.swift in Sources */,
 				2BBB42BD25F52550000513E7 /* AppDelegate.swift in Sources */,
+				2B2D177C25F62741005CD071 /* CardMidView.swift in Sources */,
 				2BBB42DB25F55F7C000513E7 /* CustomButtonStyle.swift in Sources */,
+				2B2D177825F624B9005CD071 /* GradientView.swift in Sources */,
+				2B2D178225F62B4A005CD071 /* Parallax.swift in Sources */,
 				2BBB42BF25F52550000513E7 /* SceneDelegate.swift in Sources */,
+				2B2D177F25F6290C005CD071 /* MailView.swift in Sources */,
 				2BBB42C125F52550000513E7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

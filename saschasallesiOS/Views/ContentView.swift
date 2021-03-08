@@ -19,11 +19,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("News", systemImage: "newspaper.fill")
                 }.tag(2)
-            Text("Tab Content 3")
+            ContactView()
                 .tabItem {
                     Label("Contact", systemImage: "ellipsis.bubble.fill")
                 }.tag(3)
-        }.accentColor(Color(#colorLiteral(red: 0.3450980392, green: 0.337254902, blue: 0.8392156863, alpha: 1)))
+        }
         
     }
 }
