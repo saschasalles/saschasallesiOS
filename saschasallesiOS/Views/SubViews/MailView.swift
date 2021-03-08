@@ -36,6 +36,7 @@ struct MailView: UIViewControllerRepresentable {
                 return
             }
             self.result = .success(result)
+
         }
     }
 

@@ -15,16 +15,12 @@ struct GradientView<Content>: View where Content: View {
         VStack(alignment: .center) {
             content()
         }
-        .frame(minWidth: 320,
-               maxWidth: .infinity,
-               alignment: .topLeading)
-        .background(
+            .background(
             LinearGradient(gradient:
-                Gradient(colors: [Color(.systemBackground), Color(.systemGray6)]), startPoint: .top, endPoint: .bottom))
-        .animation(.easeOut(duration: 0.15))
+                            Gradient(colors: [Color(.systemBackground), Color(.systemGray6)]), startPoint: .top, endPoint: .bottom))
+            .animation(.easeOut(duration: 0.15))
     }
 
-    // note the optional parameter here
     init(@ViewBuilder _ content: @escaping () -> Content) {
         self.content = content
     }
