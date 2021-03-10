@@ -10,6 +10,7 @@ import SwiftUI
 struct ArticleCardView: View {
     var title: String
     var duration: String
+    var width: CGFloat
     var body: some View {
         
         
@@ -34,7 +35,7 @@ struct ArticleCardView: View {
                 }
                 .background(BlurView(style: .regular))
             , alignment: .bottom)
-            .frame(width: 320, height: 380)
+            .frame(width: self.width, height: 360)
             .clipped()
             .cornerRadius(12)
 
@@ -43,6 +44,6 @@ struct ArticleCardView: View {
 
 struct ArticleCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleCardView(title: "Swift en 1h", duration: "1h")
+        ArticleCardView(title: "Swift en 1h", duration: "1h", width: 1.5)
     }
 }
