@@ -136,6 +136,7 @@ struct AboutView: View {
 
                                 StudiesCardView(size: geo.size.width - 55, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
                                 StudiesCardView(size: geo.size.width - 55, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
+                                
                             }.padding(.horizontal, 20)
                             .padding(.vertical, 40)
                         }
