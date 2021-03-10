@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ArticleCardView: View {
+    var title: String
+    var duration: String
     var body: some View {
         
         
@@ -19,11 +21,11 @@ struct ArticleCardView: View {
                     Spacer()
                     VStack(spacing: 5) {
 
-                        Text("Swiftlint en 5 minutes")
+                        Text(self.title)
                             .font(.headline)
                             .foregroundColor(.white)
                             
-                        Text("20 min de lecture")
+                        Text("\(self.duration) de lecture")
                             .font(.callout)
                             .foregroundColor(.white)
                     }
@@ -36,17 +38,11 @@ struct ArticleCardView: View {
             .clipped()
             .cornerRadius(12)
 
-
-
-
-
-
-
     }
 }
 
 struct ArticleCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleCardView()
+        ArticleCardView(title: "Swift en 1h", duration: "1h")
     }
 }
