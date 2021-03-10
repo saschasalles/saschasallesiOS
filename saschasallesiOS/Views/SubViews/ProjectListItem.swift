@@ -17,16 +17,18 @@ struct ProjectListItem: View {
                 .clipped()
                 .cornerRadius(6)
                 .padding(.leading, -10)
-            
-            VStack(alignment: .leading) {
+
+            VStack(alignment: .leading, spacing: 15) {
                 Text("Expense App")
                     .font(.headline)
-                
+
+
                 Text("An expenses management app. Set financial goals and track your expenses with the Expenses application.")
                     .font(.callout)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 Spacer()
+
             }
             Spacer()
         }.frame(height: 120)

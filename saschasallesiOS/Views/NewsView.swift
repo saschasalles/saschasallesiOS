@@ -16,12 +16,12 @@ struct NewsView: View {
                 }.padding(.vertical)
                 
                 Section(header: Text("Last Projects")) {
-                    ProjectListItem()
+                    
                     ProjectListItem()
                     ProjectListItem()
                 }
             }
-            .listStyle(GroupedListStyle())
+            .listStyle(InsetGroupedListStyle())
             .navigationBarTitle("News")
         }
     }
