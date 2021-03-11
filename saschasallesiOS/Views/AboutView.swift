@@ -133,12 +133,11 @@ struct AboutView: View {
 
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 25) {
-
-                                StudiesCardView(size: geo.size.width - 55, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
-                                StudiesCardView(size: geo.size.width - 55, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
+                                StudiesCardView(size: geo.size.width - 120, image: "ingesup", title: "Ingésup Bordeaux", year: "2018 to 2023", degree: "Master of Science", description: "Computer Engineering")
+                                StudiesCardView(size: geo.size.width - 120, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
                                 
                             }.padding(.horizontal, 20)
-                            .padding(.vertical, 40)
+                            .padding(.vertical, 35)
                         }
 
                     }

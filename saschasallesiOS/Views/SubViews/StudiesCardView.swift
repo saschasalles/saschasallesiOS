@@ -9,7 +9,6 @@ import SwiftUI
 
 struct StudiesCardView: View {
     var size: CGFloat
-    var color: UIColor
     var image: String
     var title: String
     var year: String
@@ -20,49 +19,62 @@ struct StudiesCardView: View {
     var body: some View {
 
         Color(.tertiarySystemBackground)
-            .frame(width: abs(self.size), height: 340)
+
 
             .overlay(
             VStack(alignment: .leading) {
                 Image(self.image)
                     .resizable()
-                    .scaledToFill()
-                    .clipped()
+
                     .overlay(
                     VStack(alignment: .trailing) {
                         Text(self.year)
-                            .font(Font.system(.title2, design: .rounded))
-                            .foregroundColor(.white)
+                            .font(Font.system(.headline, design: .rounded))
+                            .foregroundColor(Color(.white))
                             .bold()
-                            .shadow(color: Color.black, radius: 3)
-                            .padding(30)
-                        Spacer()
+                            .padding(.vertical, 3)
+                            .padding(.horizontal, 12)
+                            .background(
+                                Color(#colorLiteral(red: 0.252296589, green: 0.1200784283, blue: 0.7973010216, alpha: 0.7478314842))
+                                    .cornerRadius(18)
+                                    
+                            )
+                            .padding(15)
                     }.frame(width: abs(self.size), alignment: .trailing)
-
+                    , alignment: .topTrailing
                 )
-                Spacer()
-                VStack(alignment: .leading) {
-                    Text(self.title)
-                        .font(.title3)
-                        .bold()
-                        .foregroundColor(Color(self.color))
 
-                    Text(self.degree)
+                VStack(alignment: .leading, spacing: 3) {
+
+                    Text(self.title)
                         .font(.headline)
-                    Text(self.description)
-                        .font(Font.system(.callout, design: .rounded))
-                        .padding(.bottom)
-                }.padding(.horizontal, 40)
-            }
+
+                    VStack(alignment: .leading) {
+                        Text(self.degree)
+                            .font(Font.system(.footnote, design: .rounded))
+                            .fontWeight(.light)
+
+                        Text(self.description)
+                            .font(Font.system(.footnote, design: .rounded))
+                            .fontWeight(.light)
+
+                    }
+
+                }.padding(.horizontal)
+                    .padding(.bottom, 10)
+
+            }, alignment: .leading
         )
-            .cornerRadius(20)
-            .shadow(radius: 15)
+            .frame(width: abs(self.size), height: 300)
+
+            .cornerRadius(12)
+            .shadow(radius: 7)
 
     }
 }
 
 struct StudiesCardView_Previews: PreviewProvider {
     static var previews: some View {
-        StudiesCardView(size: 300, color: UIColor.brown, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
+        StudiesCardView(size: 300, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
     }
 }
