@@ -11,15 +11,10 @@ struct NewsView: View {
     var body: some View {
         NavigationView {
 
-            List {
 
-                
-                    
-                    ProjectListItem()
-                    ProjectListItem()
-
-            }
-            .navigationBarTitle("News")
+            Text("")
+            
+                .navigationBarTitle("News")
         }
     }
 }

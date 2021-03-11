@@ -75,7 +75,6 @@ struct AboutView: View {
                                 VStack {
                                     Button(action: {
                                         self.showRealImage.toggle()
-
                                         withAnimation(Animation.easeOut) {
                                             self.degrees += 360
                                         }
@@ -132,7 +131,7 @@ struct AboutView: View {
                             .padding(.bottom, -15)
 
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 25) {
+                            HStack(spacing: 27) {
                                 StudiesCardView(size: geo.size.width - 120, image: "ingesup", title: "Ingésup Bordeaux", year: "2018 to 2023", degree: "Master of Science", description: "Computer Engineering")
                                 StudiesCardView(size: geo.size.width - 120, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
                                 
@@ -162,6 +161,27 @@ struct AboutView: View {
                         }
                     }.padding(.horizontal, 10)
                     .padding(.top, -20)
+                    
+                    LazyVStack(alignment: .leading) {
+                        HStack {
+                            Text("Last Projects")
+                                .font(.title)
+                                .bold()
+                                .padding(.vertical)
+                            Spacer()
+                            Button(action: {
+                                print("all certificates")
+                            }, label: {
+                                Text("See All")
+                            })
+                        }
+
+                        LazyVStack(spacing: 10) {
+                            ProjectListItem()
+                            ProjectListItem()
+                        }
+                    }.padding(.horizontal, 10)
+
 
                 }
             }

@@ -9,29 +9,31 @@ import SwiftUI
 
 struct ProjectListItem: View {
     var body: some View {
-        HStack {
+        HStack(spacing: 15) {
             Image("expense")
                 .resizable()
                 .scaledToFill()
-                .frame(width: 120)
+                .frame(width: 100)
                 .clipped()
                 .cornerRadius(6)
                 .padding(.leading, -10)
 
-            VStack(alignment: .leading, spacing: 15) {
+
+            VStack(alignment: .leading, spacing: 5) {
                 Text("Expense App")
                     .font(.headline)
 
 
                 Text("An expenses management app. Set financial goals and track your expenses with the Expenses application.")
-                    .font(.callout)
+                    .font(Font.system(size: 14))
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 Spacer()
+                Divider()
+            }.frame(height: 100, alignment: .top)
 
-            }
-            Spacer()
-        }.frame(height: 120)
+        }.frame(height: 100)
+        .padding(.leading)
     }
 }
 

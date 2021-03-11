@@ -21,7 +21,8 @@ struct CertificateListItem: View {
                     .frame(width: 55, height: 55)
                     .clipped()
                     .cornerRadius(8.0)
-                    .padding(.horizontal, 10)
+                    .padding(.trailing, 10)
+                    .padding(.leading, 5)
                     
             }.padding(.vertical, 8)
             
