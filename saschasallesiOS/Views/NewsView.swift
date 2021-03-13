@@ -11,9 +11,13 @@ struct NewsView: View {
     var body: some View {
         NavigationView {
 
-
-            Text("")
-            
+            ScrollView {
+                VStack(alignment: .center) {
+                    GeometryReader { reader in
+                        ArticleCardView(title: "Swift in 1h", duration: "10 min", width: abs(reader.size.width - 30))
+                    }
+                }
+            }
                 .navigationBarTitle("News")
         }
     }
