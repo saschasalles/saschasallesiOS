@@ -44,6 +44,6 @@ struct ArticleCardView: View {
 
 struct ArticleCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleCardView(title: "Swift en 1h", duration: "1h", width: 1.5)
+        ArticleCardView(title: "Swift en 1h", duration: "1h", width: 300)
     }
 }
