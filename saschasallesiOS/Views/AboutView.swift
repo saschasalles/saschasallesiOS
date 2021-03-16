@@ -113,7 +113,7 @@ struct AboutView: View {
                         }
                         else if selection == 2 {
                             Text(self.text)
-                                .font(Font.system(.body, design: .serif))
+                                .font(Font.system(.body))
                                 .lineLimit(nil)
                                 .multilineTextAlignment(.leading)
                                 .fixedSize(horizontal: false, vertical: true)
@@ -124,27 +124,49 @@ struct AboutView: View {
 
                     VStack(alignment: .leading) {
                         Text("Education")
-                            .font(.title)
+                            .font(.title2)
                             .bold()
                             .padding(.top, 20)
-                            .padding(.horizontal, 10)
-                            .padding(.bottom, -15)
+                            .padding(.leading)
+                            .padding(.bottom, -25)
 
                         ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 27) {
+                            HStack(spacing: 22) {
                                 StudiesCardView(size: geo.size.width - 120, image: "ingesup", title: "Ingésup Bordeaux", year: "2018 to 2023", degree: "Master of Science", description: "Computer Engineering")
                                 StudiesCardView(size: geo.size.width - 120, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
-                                
                             }.padding(.horizontal, 20)
-                            .padding(.vertical, 35)
+                                .padding(.vertical, 35)
                         }
 
                     }
+                    
+                    LazyVStack(alignment: .leading) {
+                        HStack {
+                            Text("Experiences")
+                                .font(.title2)
+                                .bold()
+                                .padding(.vertical, 10)
+
+                            Spacer()
+                            Button(action: {
+                                print("all certificates")
+                            }, label: {
+                                Text("See All")
+                                    .padding(.horizontal, 10)
+                            })
+                        }
+
+                        LazyVStack(spacing: 10) {
+                            ExpListItem(title: "Thales Group", image: "thales")
+                            ExpListItem(title: "Thales Group", image: "thales")
+                        }
+                    }.padding(.horizontal)
+                    .padding(.top, -20)
 
                     VStack(alignment: .leading) {
                         HStack {
                             Text("Pro Certificates")
-                                .font(.title)
+                                .font(.title2)
                                 .bold()
                                 .padding(.vertical)
                             Spacer()
@@ -152,6 +174,7 @@ struct AboutView: View {
                                 print("all certificates")
                             }, label: {
                                 Text("See All")
+                                    .padding(.horizontal, 10)
                             })
                         }
 
@@ -159,28 +182,10 @@ struct AboutView: View {
                             CertificateListItem()
                             CertificateListItem()
                         }
-                    }.padding(.horizontal, 10)
-                    .padding(.top, -20)
-                    
-                    LazyVStack(alignment: .leading) {
-                        HStack {
-                            Text("Last Projects")
-                                .font(.title)
-                                .bold()
-                                .padding(.vertical)
-                            Spacer()
-                            Button(action: {
-                                print("all certificates")
-                            }, label: {
-                                Text("See All")
-                            })
-                        }
+                    }.padding(.horizontal)
+                        
 
-                        LazyVStack(spacing: 10) {
-                            ProjectListItem()
-                            ProjectListItem()
-                        }
-                    }.padding(.horizontal, 10)
+
 
 
                 }

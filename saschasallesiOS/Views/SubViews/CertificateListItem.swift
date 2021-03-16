@@ -22,15 +22,14 @@ struct CertificateListItem: View {
                     .clipped()
                     .cornerRadius(8.0)
                     .padding(.trailing, 10)
-                    .padding(.leading, 5)
+
                     
             }.padding(.vertical, 8)
             
             VStack(alignment: .leading) {
                 Text("OpenClassRoom Certification")
-                    .font(Font.system(.body, design: .rounded))
+                    .font(.body)
                     .bold()
-                    .foregroundColor(Color(.systemOrange))
                 Text("Apprenez à ajouter des listes dans vos apps")
                     .font(Font.system(.callout, design: .rounded))
                     .foregroundColor(Color(.systemGray))

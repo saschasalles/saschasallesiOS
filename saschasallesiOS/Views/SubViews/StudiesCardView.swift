@@ -68,7 +68,7 @@ struct StudiesCardView: View {
             .frame(width: abs(self.size), height: 300)
 
             .cornerRadius(12)
-            .shadow(radius: 7)
+            .shadow(color: Color(.systemGray5), radius: 5)
 
     }
 }

@@ -16,8 +16,8 @@ struct ProjectListItem: View {
                 .frame(width: 100)
                 .clipped()
                 .cornerRadius(6)
-                .padding(.leading, -10)
 
+            
 
             VStack(alignment: .leading, spacing: 5) {
                 Text("Expense App")
@@ -33,7 +33,6 @@ struct ProjectListItem: View {
             }.frame(height: 100, alignment: .top)
 
         }.frame(height: 100)
-        .padding(.leading)
     }
 }
 
