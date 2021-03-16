@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,12 +14,37 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ayj-X7-fhy">
-                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-Km-fjq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem largeTitleDisplayMode="always" id="6eM-yK-581"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqH-Un-T7I">
+                                <rect key="frame" x="0.0" y="176" width="414" height="240"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="I2m-69-0YK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeo-58-QQ9">
+                                <rect key="frame" x="16" y="94" width="172" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="XP4-dc-cKF"/>
+                                    <constraint firstAttribute="height" constant="41" id="zQX-rZ-WPa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayj-X7-fhy">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="About me" image="person.fill" catalog="system" selectedImage="person.fill" id="3Ic-91-0L3" userLabel="About Me">
@@ -29,32 +54,21 @@
                                     <tabBarItem title="Contact" image="ellipsis.bubble.fill" catalog="system" id="bVP-89-P1z" userLabel="Contact"/>
                                 </items>
                             </tabBar>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-Km-fjq">
-                                <rect key="frame" x="0.0" y="44" width="390" height="96"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem largeTitleDisplayMode="always" id="Gbu-o3-X4O"/>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqH-Un-T7I">
-                                <rect key="frame" x="0.0" y="176" width="390" height="240"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="I2m-69-0YK"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ayj-X7-fhy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Nl-7C-dL8"/>
+                            <constraint firstItem="Oeo-58-QQ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3YS-0m-ZeO"/>
                             <constraint firstItem="xqH-Un-T7I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9i8-3D-s3w"/>
                             <constraint firstItem="xqH-Un-T7I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CyM-KJ-hPf"/>
                             <constraint firstItem="SVQ-Km-fjq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QRs-Db-g81"/>
+                            <constraint firstItem="ayj-X7-fhy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QyO-Ej-uxm"/>
+                            <constraint firstItem="ayj-X7-fhy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XtR-gg-CXR"/>
                             <constraint firstItem="SVQ-Km-fjq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jd6-f0-BRo"/>
                             <constraint firstItem="xqH-Un-T7I" firstAttribute="top" secondItem="SVQ-Km-fjq" secondAttribute="bottom" constant="36" id="om5-Fb-uD4"/>
                             <constraint firstItem="SVQ-Km-fjq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qbJ-Cy-Qjj"/>
+                            <constraint firstItem="Oeo-58-QQ9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zBr-Sr-Bvd"/>
                         </constraints>
                     </view>
                 </viewController>

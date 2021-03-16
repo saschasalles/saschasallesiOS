@@ -14,11 +14,22 @@ struct AboutView: View {
     @State private var degrees = 0.0
     private var languageList = ["Swift", "Objective-C", "C"]
     @State private var selection = 1
-    @Environment(\.defaultMinListRowHeight) var minRowHeight
 
-    private let text = """
-                            Hello my name is Sascha Sallès I'm a third year student of computer engineering 🎓 \n\nI've had a great passion for computers since I was a child.\n\nIn 2018 I chose to join the university Ingésup because it is one of the universities that appear on the Apple keynote. \n\nApple has contributed to make my passion for computer science more intense. Integrating Apple and evolving with them is therefore my long term goal.
-                            """
+    private let text =
+        """
+        Hello my name is Sascha Sallès
+        I'm a third year student of computer
+        engineering 🎓 \n\nI've had a great
+        passion for computers since I was a
+        child.\n\nIn 2018 I chose to join the
+        university Ingésup because it is one of
+        the universities that appear on the Apple
+        keynote. \n\nApple has contributed to make
+        my passion for computer science more intense.
+        Integrating Apple and evolving with them is
+        therefore my long term goal.
+        """
+
     var body: some View {
         NavigationView {
             GeometryReader { geo in
@@ -110,8 +121,7 @@ struct AboutView: View {
                                 }.padding()
 
                             }
-                        }
-                        else if selection == 2 {
+                        } else if selection == 2 {
                             Text(self.text)
                                 .font(Font.system(.body))
                                 .lineLimit(nil)
@@ -132,14 +142,26 @@ struct AboutView: View {
 
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 22) {
-                                StudiesCardView(size: geo.size.width - 120, image: "ingesup", title: "Ingésup Bordeaux", year: "2018 to 2023", degree: "Master of Science", description: "Computer Engineering")
-                                StudiesCardView(size: geo.size.width - 120, image: "lycee", title: "Lycée Sud des Landes", year: "2018", degree: "Scientific Baccalaureat", description: "Computer Science spécialisation")
+                                StudiesCardView(
+                                    size: geo.size.width - 120,
+                                    image: "ingesup",
+                                    title: "Ingésup Bordeaux",
+                                    year: "2018 to 2023",
+                                    degree: "Master of Science",
+                                    description: "Computer Engineering")
+                                StudiesCardView(
+                                    size: geo.size.width - 120,
+                                    image: "lycee",
+                                    title: "Lycée Sud des Landes",
+                                    year: "2018",
+                                    degree: "Scientific Baccalaureat",
+                                    description: "Computer Science spécialisation")
                             }.padding(.horizontal, 20)
-                                .padding(.vertical, 35)
+                        .padding(.vertical, 35)
                         }
 
                     }
-                    
+
                     LazyVStack(alignment: .leading) {
                         HStack {
                             Text("Experiences")
@@ -183,10 +205,6 @@ struct AboutView: View {
                             CertificateListItem()
                         }
                     }.padding(.horizontal)
-                        
-
-
-
 
                 }
             }
@@ -200,6 +218,3 @@ struct AboutView_Previews: PreviewProvider {
         AboutView()
     }
 }
-
-
-

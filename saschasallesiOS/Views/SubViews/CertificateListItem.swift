@@ -22,10 +22,7 @@ struct CertificateListItem: View {
                     .clipped()
                     .cornerRadius(8.0)
                     .padding(.trailing, 10)
-
-                    
             }.padding(.vertical, 8)
-            
             VStack(alignment: .leading) {
                 Text("OpenClassRoom Certification")
                     .font(.body)
@@ -36,7 +33,6 @@ struct CertificateListItem: View {
                     .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                 Divider()
             }
-           
         }
         .frame(height: 70)
     }

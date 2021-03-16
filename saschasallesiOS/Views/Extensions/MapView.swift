@@ -35,7 +35,6 @@ struct MapView: UIViewRepresentable {
     typealias Context = UIViewRepresentableContext<Self>
 }
 
-
 class Coordinator: NSObject, MKMapViewDelegate {
     var parent: MapView
 

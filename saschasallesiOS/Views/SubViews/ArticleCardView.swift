@@ -51,8 +51,7 @@ struct ArticleCardView: View {
                         Spacer()
                     }
                         .frame(height: 85, alignment: .center)
-                        .background(BlurView(style: .regular))
-                    , alignment: .bottom)
+                        .background(BlurView(style: .regular)), alignment: .bottom)
             }
 
                 .frame(width: self.width, height: 345)
@@ -63,7 +62,6 @@ struct ArticleCardView: View {
                     .frame(width: self.width)
             )
                 .padding(.bottom)
-
 
         }
             .frame(width: self.width)

@@ -21,7 +21,6 @@ struct NewsView: View {
                             .fontWeight(.semibold)
                             .padding(.horizontal)
 
-
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 0) {
                                 ForEach(0..<4) { _ in
@@ -30,7 +29,6 @@ struct NewsView: View {
                                 }
                                 ArticleCardView(title: "Voir tous les articles", duration: nil, image: nil, width: abs(geo.size.width * 0.67))
                                     .padding(.leading)
-
 
                             }.padding(.trailing)
                         }
@@ -66,5 +64,6 @@ struct NewsView: View {
 struct NewsView_Previews: PreviewProvider {
     static var previews: some View {
         NewsView()
+            .environment(\.locale, .init(identifier: "fr"))
     }
 }

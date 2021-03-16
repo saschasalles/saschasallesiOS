@@ -17,6 +17,8 @@
 		2B2D177F25F6290C005CD071 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D177E25F6290C005CD071 /* MailView.swift */; };
 		2B2D178225F62B4A005CD071 /* Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D178125F62B4A005CD071 /* Parallax.swift */; };
 		2B2D178625F655F6005CD071 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2D178525F655F6005CD071 /* ContactView.swift */; };
+		2B705E6B26010EF200D5B5FD /* Localised.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B705E6926010EF200D5B5FD /* Localised.strings */; };
+		2B705E75260115CB00D5B5FD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2B705E74260115CB00D5B5FD /* .swiftlint.yml */; };
 		2B74E63D25F9725900011347 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B74E63C25F9725900011347 /* BlurView.swift */; };
 		2B74E64025F975D600011347 /* ArticleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B74E63F25F975D600011347 /* ArticleCardView.swift */; };
 		2BBB42BD25F52550000513E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBB42BC25F52550000513E7 /* AppDelegate.swift */; };
@@ -36,12 +38,16 @@
 		2B127BB725F6C7A3007DBA9A /* ProjectListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListItem.swift; sourceTree = "<group>"; };
 		2B127BBB25F6CB09007DBA9A /* ArticleListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListItem.swift; sourceTree = "<group>"; };
 		2B1B51DB2600C35B00DD0778 /* ExpListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpListItem.swift; sourceTree = "<group>"; };
-		2B1B51DE2600E7CC00DD0778 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2B1B51E126010A6C00DD0778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2B2D177725F624B9005CD071 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2B2D177B25F62741005CD071 /* CertificateListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateListItem.swift; sourceTree = "<group>"; };
 		2B2D177E25F6290C005CD071 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MailView.swift; path = saschasallesiOS/Views/SubViews/MailView.swift; sourceTree = SOURCE_ROOT; };
 		2B2D178125F62B4A005CD071 /* Parallax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parallax.swift; sourceTree = "<group>"; };
 		2B2D178525F655F6005CD071 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		2B705E6726010E7700D5B5FD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2B705E6A26010EF200D5B5FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = saschasallesiOS/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		2B705E7026010FF100D5B5FD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = ../fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B705E74260115CB00D5B5FD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = saschasallesiOS/.swiftlint.yml; sourceTree = "<group>"; };
 		2B74E63C25F9725900011347 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		2B74E63F25F975D600011347 /* ArticleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCardView.swift; sourceTree = "<group>"; };
 		2BBB42B925F52550000513E7 /* saschasallesiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saschasallesiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +91,7 @@
 		2BBB42B025F52550000513E7 = {
 			isa = PBXGroup;
 			children = (
+				2B705E74260115CB00D5B5FD /* .swiftlint.yml */,
 				2BBB42BB25F52550000513E7 /* saschasallesiOS */,
 				2BBB42BA25F52550000513E7 /* Products */,
 			);
@@ -130,6 +137,7 @@
 				2BBB42C025F52550000513E7 /* ContentView.swift */,
 				2BBB42D425F528CA000513E7 /* AboutView.swift */,
 				2B127BB425F6C686007DBA9A /* NewsView.swift */,
+				2B705E6926010EF200D5B5FD /* Localised.strings */,
 				2B2D178525F655F6005CD071 /* ContactView.swift */,
 			);
 			path = Views;
@@ -171,6 +179,7 @@
 				2BBB42B525F52550000513E7 /* Sources */,
 				2BBB42B625F52550000513E7 /* Frameworks */,
 				2BBB42B725F52550000513E7 /* Resources */,
+				2B705E722601148900D5B5FD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -219,6 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B705E75260115CB00D5B5FD /* .swiftlint.yml in Resources */,
+				2B705E6B26010EF200D5B5FD /* Localised.strings in Resources */,
 				2BBB42C925F52552000513E7 /* LaunchScreen.storyboard in Resources */,
 				2BBB42C625F52552000513E7 /* Preview Assets.xcassets in Resources */,
 				2BBB42C325F52552000513E7 /* Assets.xcassets in Resources */,
@@ -226,6 +237,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B705E722601148900D5B5FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BBB42B525F52550000513E7 /* Sources */ = {
@@ -256,11 +287,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2B705E6926010EF200D5B5FD /* Localised.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B705E6A26010EF200D5B5FD /* Base */,
+				2B705E7026010FF100D5B5FD /* fr */,
+			);
+			name = Localised.strings;
+			sourceTree = "<group>";
+		};
 		2BBB42C725F52552000513E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2BBB42C825F52552000513E7 /* Base */,
-				2B1B51DE2600E7CC00DD0778 /* fr */,
+				2B1B51E126010A6C00DD0778 /* en */,
+				2B705E6726010E7700D5B5FD /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

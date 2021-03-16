@@ -11,7 +11,7 @@ import MessageUI
 struct ContactView: View {
 
     @State var isShowingMailView = false
-    @State var result: Result<MFMailComposeResult, Error>? = nil
+    @State var result: Result<MFMailComposeResult, Error>?
 
     var body: some View {
         NavigationView {
@@ -43,7 +43,6 @@ struct ContactView: View {
                         }
                     }
                 }
-                
                 Section {
                     Link(destination: URL(string: "https://www.instagram.com/iamsaschasalles/")!) {
                         Label(

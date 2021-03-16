@@ -24,7 +24,6 @@ struct ContentView: View {
                     Label("Contact", systemImage: "ellipsis.bubble.fill")
                 }.tag(3)
         }
-        
     }
 }
 

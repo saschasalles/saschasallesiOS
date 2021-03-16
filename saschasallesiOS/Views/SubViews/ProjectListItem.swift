@@ -17,12 +17,9 @@ struct ProjectListItem: View {
                 .clipped()
                 .cornerRadius(6)
 
-            
-
             VStack(alignment: .leading, spacing: 5) {
                 Text("Expense App")
                     .font(.headline)
-
 
                 Text(LocalizedStringKey("An expenses management app. Set financial goals and track your expenses with the Expenses application."))
                     .font(Font.system(size: 14))
