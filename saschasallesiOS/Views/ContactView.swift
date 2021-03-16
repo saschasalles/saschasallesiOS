@@ -37,7 +37,7 @@ struct ContactView: View {
                     Link(destination: URL(string: "https://www.linkedin.com/in/sascha-salles")!) {
                         HStack {
                             Label(
-                                title: { Text("Follow me on Linkedin") },
+                                title: { Text("Follow me on LinkedIn") },
                                 icon: { Image("linkedin") }
                             )
                         }

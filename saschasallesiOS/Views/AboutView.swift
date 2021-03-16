@@ -17,15 +17,15 @@ struct AboutView: View {
 
     private let text =
         """
-        Hello my name is Sascha Sallès
-        I'm a third year student of computer
-        engineering 🎓 \n\nI've had a great
-        passion for computers since I was a
-        child.\n\nIn 2018 I chose to join the
-        university Ingésup because it is one of
-        the universities that appear on the Apple
-        keynote. \n\nApple has contributed to make
-        my passion for computer science more intense.
+        Hello my name is Sascha Sallès.
+        I'm a third year student of computer engineering\n
+        I've had a great passion for computers
+        since I was a child.\n
+        In 2018 I chose to join the university
+        Ingésup because it is one of the universities
+        that appear on the Apple keynote.\n
+        Apple has contributed to make my passion
+        for computer science more intense.
         Integrating Apple and evolving with them is
         therefore my long term goal.
         """

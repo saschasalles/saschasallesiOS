@@ -27,7 +27,7 @@ struct NewsView: View {
                                     ArticleCardView(title: "Swift in 1h", duration: "10 min", image: "expense", width: abs(geo.size.width * 0.67))
                                         .padding(.leading)
                                 }
-                                ArticleCardView(title: "Voir tous les articles", duration: nil, image: nil, width: abs(geo.size.width * 0.67))
+                                ArticleCardView(title: "See all my articles", duration: nil, image: nil, width: abs(geo.size.width * 0.67))
                                     .padding(.leading)
 
                             }.padding(.trailing)

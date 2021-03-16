@@ -15,7 +15,12 @@ extension View {
             direction: direction
         )
     }
-    public func parallax(minHorizontal: CGFloat = -10, maxHorizontal: CGFloat = 10, minVertical: CGFloat = -10, maxVertical: CGFloat = 10, direction: ParallaxDirection = .both) -> some View {
+    public func parallax(
+        minHorizontal: CGFloat = -10,
+        maxHorizontal: CGFloat = 10,
+        minVertical: CGFloat = -10,
+        maxVertical: CGFloat = 10,
+        direction: ParallaxDirection = .both) -> some View {
         ParallaxView(
             view: AnyView(self),
             minHorizontal: minHorizontal,
