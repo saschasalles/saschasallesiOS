@@ -11,7 +11,6 @@ struct ExpListItem: View {
     var title: String = ""
     var image: String = ""
     var body: some View {
-
         HStack {
             HStack {
                 Image(image)
@@ -22,10 +21,8 @@ struct ExpListItem: View {
                     .clipped()
                     .cornerRadius(8.0)
                     .padding(.trailing, 10)
-
-                    
             }.padding(.vertical, 8)
-            
+
             VStack(alignment: .leading) {
                 Text(title)
                     .font(.headline)
@@ -39,9 +36,8 @@ struct ExpListItem: View {
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 Divider()
             }
-           
-        }
-        .frame(height: 70)
+
+        }.frame(height: 70)
     }
 }
 

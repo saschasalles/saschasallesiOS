@@ -24,7 +24,7 @@ struct ProjectListItem: View {
                     .font(.headline)
 
 
-                Text("An expenses management app. Set financial goals and track your expenses with the Expenses application.")
+                Text(LocalizedStringKey("An expenses management app. Set financial goals and track your expenses with the Expenses application."))
                     .font(Font.system(size: 14))
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)

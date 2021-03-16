@@ -24,26 +24,24 @@ struct NewsView: View {
 
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 0) {
-                                ForEach(0..<5) { _ in
+                                ForEach(0..<4) { _ in
                                     ArticleCardView(title: "Swift in 1h", duration: "10 min", image: "expense", width: abs(geo.size.width * 0.67))
                                         .padding(.leading)
                                 }
                                 ArticleCardView(title: "Voir tous les articles", duration: nil, image: nil, width: abs(geo.size.width * 0.67))
                                     .padding(.leading)
-                                    
+
 
                             }.padding(.trailing)
                         }
-
                     }
-                    
+
                     LazyVStack(alignment: .leading) {
                         HStack {
                             Text("Last Projects")
                                 .font(.title2)
-                                .bold()
+                                .fontWeight(.semibold)
                                 .padding(.vertical)
-
                             Spacer()
                             Button(action: {
                                 print("all certificates")
@@ -59,8 +57,6 @@ struct NewsView: View {
                         }
                     }.padding(.horizontal)
                 }.padding(.top, 5)
-
-
                     .navigationBarTitle("News")
             }
         }
