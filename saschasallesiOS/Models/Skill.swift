@@ -8,5 +8,5 @@
 import Foundation
 
 struct Skill {
-    var name: String
+  var name: String
 }

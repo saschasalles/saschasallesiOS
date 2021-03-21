@@ -7,7 +7,6 @@
 */
 
 "About Me" = "About Me";
-"About me" = "About me";
 "Introducing" = "Introducing";
 "Avatar" = "Avatar";
 "From Bordeaux" = "From Bordeaux";
@@ -20,10 +19,5 @@
 "Last Projects" = "Last Projects";
 "See all my articles" = "See all my articles";
 
-
-"Send me an email" = "Send me an email";
-"Follow me on GitHub" = "Follow me on GitHub";
-"Follow me on LinkedIn" = "Follow me on LinkedIn";
-"Follow me on Instagram" = "Follow me on Instagram";
-"Follow me on Facebook" = "Follow me on Facebook";
-
+"Send me an" = "Send me an";
+"Follow me on" = "Follow me on";

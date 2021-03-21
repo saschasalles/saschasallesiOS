@@ -1,5 +1,5 @@
 //
-//  Degree.swift
+//  Experience.swift
 //  saschasallesiOS
 //
 //  Created by Sascha Sallès on 16/03/2021.
@@ -8,13 +8,13 @@
 import Foundation
 import CoreLocation
 
-struct Degree {
-  var establishmentName: String
-  var startDate: Date
+struct Experience {
+  var societyName: String
+  var beginDate: Date
   var endDate: Date
-  var graduateLevel: String
-  var domain: String
-  var accomplishment: String
+  var contractType: String
+  var description: String
+  var praticedSkills: [Skill]
   var latitude: CLLocationDegrees
   var longitude: CLLocationDegrees
 }
